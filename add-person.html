@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aggiungi Persona</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header e Menu -->
+  <header class="header">
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">🏠 Home</a></li>
+        <li><a href="registro.html">📘 Registro Generale</a></li>
+        <li><a href="entrata.html">⏰ Entrata</a></li>
+        <li><a href="uscita.html">🚶‍♂️ Uscita</a></li>
+        <li><a href="pranzo.html">🍴 Pranzo</a></li>
+        <li><a href="gite.html">🚗 Gite</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenuto della Pagina -->
+  <div class="container">
+    <h1>📘 Aggiungi Nuova Persona</h1>
+
+    <!-- Form per Aggiungere una Persona -->
+    <form id="addPersonForm">
+      <label for="name">Nome</label>
+      <input type="text" id="name" placeholder="Inserisci il nome" required />
+
+      <label for="surname">Cognome</label>
+      <input type="text" id="surname" placeholder="Inserisci il cognome" required />
+
+      <label for="age">Età</label>
+      <input type="number" id="age" placeholder="Inserisci l'età" required />
+
+      <label for="phoneMother">Numero Madre</label>
+      <input type="text" id="phoneMother" placeholder="Numero di telefono madre" required />
+
+      <label for="phoneFather">Numero Padre</label>
+      <input type="text" id="phoneFather" placeholder="Numero di telefono padre" required />
+
+      <label for="emailMother">Email Madre</label>
+      <input type="email" id="emailMother" placeholder="Email della madre" required />
+
+      <label for="emailFather">Email Padre</label>
+      <input type="email" id="emailFather" placeholder="Email del padre" required />
+
+      <button type="submit">Aggiungi Persona</button>
+    </form>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

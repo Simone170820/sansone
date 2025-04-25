@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Genitore</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <ul>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Login Genitore</h1>
+
+    <!-- Form di login -->
+    <form id="loginForm">
+      <input type="email" id="loginEmail" placeholder="Email del genitore" required />
+      <input type="password" id="loginPassword" placeholder="Password" required />
+      <button type="submit">Accedi</button>
+    </form>
+
+    <div id="loginError" style="color: red; display: none;">Credenziali errate!</div>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>

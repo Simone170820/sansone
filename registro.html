@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registro Oratorio - registro</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">🏠 Home</a></li>
+        <li><a href="registro.html">📘 Registro Generale</a></li>
+        <li><a href="entrata.html">⏰ Entrata</a></li>
+        <li><a href="uscita.html">🚶‍♂️ Uscita</a></li>
+        <li><a href="pranzo.html">🍴 Pranzo</a></li>
+        <li><a href="gite.html">🚗 Gite</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>📘 Registro Oratorio</h1>
+
+    <!-- Tabella per mostrare le persone registrate -->
+    <table id="peopleTable">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Cognome</th>
+          <th>Età</th>
+          <th>Credenziali</th>
+        </tr>
+      </thead>
+      <tbody id="peopleList">
+        <!-- Le righe della tabella verranno aggiunte dinamicamente -->
+      </tbody>
+    </table>
+
+    <!-- Bottone per aggiungere una nuova persona -->
+    <button id="addButton">Aggiungi Nuova Persona</button>
+
+    <!-- Popup per aggiungere una persona -->
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <span class="popup-close">&times;</span>
+        <h2>Aggiungi Nuova Persona</h2>
+        <form id="addPersonForm">
+          <input type="text" id="name" placeholder="Nome" required />
+          <input type="text" id="surname" placeholder="Cognome" required />
+          <input type="number" id="age" placeholder="Età" required />
+          <input type="text" id="phoneMother" placeholder="Numero Madre" required />
+          <input type="text" id="phoneFather" placeholder="Numero Padre" required />
+          <input type="email" id="emailMother" placeholder="Email Madre" required />
+          <input type="email" id="emailFather" placeholder="Email Padre" required />
+          <button type="submit">Aggiungi</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Popup per visualizzare i dettagli della persona -->
+    <div id="popupDetails" class="popup">
+      <div class="popup-content">
+        <span class="popup-close" onclick="closePopupDetails()">&times;</span>
+        <h2>Dettagli Persona</h2>
+        <p><strong>Nome:</strong> <span id="popupName"></span></p>
+        <p><strong>Cognome:</strong> <span id="popupSurname"></span></p>
+        <p><strong>Età:</strong> <span id="popupAge"></span></p>
+        <p><strong>Numero Madre:</strong> <span id="popupPhoneMother"></span></p>
+        <p><strong>Numero Padre:</strong> <span id="popupPhoneFather"></span></p>
+        <p><strong>Email Madre:</strong> <span id="popupEmailMother"></span></p>
+        <p><strong>Email Padre:</strong> <span id="popupEmailFather"></span></p>
+        <p><strong>Email Generata:</strong> <span id="popupEmail"></span></p>
+        <p><strong>Password Generata:</strong> <span id="popupPassword"></span></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
